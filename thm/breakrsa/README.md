@@ -1,7 +1,9 @@
-# Breaking RSA (THM)
+# Breaking RSA Writeup
+
+This writeup is based on the [Breaking RSA](https://tryhackme.com/room/breakrsa) room over at TryHackMe.
 
 ## RSA Basics
-RSA keys are, among other usecases, used for public key authentication to authenticate against a server running SSH to remotely control this server. An RSA key typically consists of the following:
+RSA keys are, among other usecases, used for public key authentication to authenticate against a server running SSH. An RSA key typically consists of the following:
 - `e`: Public exponent, usually set to `65537`
 - `n`: Public modulus of the public-private-key pair. It is a product of 2 large random prime numbers `p` and `q`
 - `d`: Private key; Large positive integer and is calculated as: $d = modinv(e, lcm(p-1, q-1))$
